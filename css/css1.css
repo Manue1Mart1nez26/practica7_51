@@ -1,0 +1,122 @@
+/* Selector universal */
+
+/* *{
+    padding: 0%;
+    margin: 0%;
+} */
+
+/* -------------------------------------------------- */
+
+/* Selector de tipo */
+/* main {
+    border: 2px dotted gold;
+} */
+
+/* --------------------------------------------------- */
+
+/* Selector por ID */
+/* #info {
+    border-bottom: 5px groove red;
+} */
+
+/* ---------------------------------------------------- */
+
+/* Selector por clase */
+/* .titulo {
+    border: 1px solid black;
+    box-shadow: 10px 5px 25px rgb(152, 162, 251);
+} */
+
+/* ------------------------------------------------------ */
+
+/* Selector de clase de una etiqueta en particular (tag) */
+/* h3.titulo {
+    font-size: 35px;
+} */
+
+/* ------------------------------------------------------ */
+
+/* Selector por atributo. No importa el valor que tenga el atributo */
+/* p[lang="en"] {
+    background-color: cornflowerblue;
+} */
+
+/* --------------------------------------------------------- */
+
+/* Selector por atributo buscando un texto al final */
+/* a[href$="mx"] {
+    background-color: brown;
+}
+
+a[href^="ftp"] {
+    background-color: burlywood;
+}
+
+a[href*="pagina"] {
+    font-size: 50px;
+}
+
+[class~="round"] {
+    border: 3px solid blue;
+    border-radius: 10px;
+} */
+
+/* ------------------------------------------------------------ */
+
+/* Selectores de lista */
+/* a, .titulo, [lang] {
+    color:blue;
+} */
+
+/* #a, article.titulo, blockquote[lang] {
+    color:blue;
+} */
+
+/* -------------------------------------------------------------*/
+
+/* Selector de descendientes */
+/* main p {
+    border: 3px solid red;
+} */
+
+/* --------------------------------------------------------------- */
+
+/* Selector de descendientes hijos directos */
+main > p {
+    border: 8px solid blue;
+}
+
+/* --------------------------------------------------------------- */
+
+/*
+    # ---------------> id
+    . ---------------> clase
+    elem1 , elem2 ---> lista
+    [atributo]-------> atributo
+    elem1 elem2 -----> descendientes. hijos elem2 de elem1
+    elem1 > elem2 ---> hijos directos elem2 de elem1
+    elem1 + elem2 ---> hermanos adyacentes elem1 junto a elem2
+
+    #x,.t,[lang="es"], article > blockquote,
+    main h1, h2 + p, .header > .titulo
+    {
+        color: blue;
+    }
+
+*/
+
+/* ----------------------------------------------------------------- */
+
+/* Selector hijo directo */
+
+/* h3 + p {
+    background-color: aqua;
+} */
+
+/* ---------------------------------------------------------------------- */
+
+/* Selector hermano general */
+
+h3 + p {
+    background-color: aqua;
+}
